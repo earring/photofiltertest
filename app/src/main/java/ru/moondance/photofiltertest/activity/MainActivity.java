@@ -16,8 +16,8 @@ import com.squareup.picasso.RequestCreator;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import ru.moondance.photofiltertest.photo.FilterSelector;
 import ru.moondance.photofiltertest.R;
+import ru.moondance.photofiltertest.photo.FilterSelector;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -87,10 +87,9 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.button_select_image)
     void onButtonSelectImageClick() {
-        Intent intent = new Intent();
-        intent.setType(IMAGE_TYPE_URI);
-        intent.setAction(Intent.ACTION_GET_CONTENT);
-        startActivityForResult(Intent.createChooser(intent, getString(R.string.button_select_picture)), PICK_IMAGE_REQUEST_CODE);
+        Intent intent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+        startActivityForResult(Intent.createChooser(intent, getString(R.string.button_select_picture)),
+                PICK_IMAGE_REQUEST_CODE);
     }
 
     @Override
