@@ -18,7 +18,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentStart="true"
-        android:text="@string/select_image"/>
+        android:text="@string/chooser_select_image"/>
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -31,7 +31,7 @@
         android:layout_below="@+id/button_select_image">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/image_view_picture"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:src="@drawable/sky"/>
@@ -58,27 +58,27 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/none"/>
+            android:text="@string/button_none"/>
 
         <Button
             android:id="@+id/button_gray_filter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/gray"/>
+            android:text="@string/button_gray"/>
 
         <Button
             android:id="@+id/button_blur_filter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/blur"/>
+            android:text="@string/button_blur"/>
 
         <Button
             android:id="@+id/button_swirl_filter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/swirl"/>
+            android:text="@string/button_swirl"/>
     </LinearLayout>
 </RelativeLayout>

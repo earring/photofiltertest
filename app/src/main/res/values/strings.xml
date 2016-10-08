@@ -1,9 +1,12 @@
 <resources>
-    <string name="app_name">PhotoFilterTest</string>
-    <string name="select_image">Select image</string>
-    <string name="none">None</string>
-    <string name="gray">Gray</string>
-    <string name="blur">Blur</string>
-    <string name="swirl">Swirl</string>
-    <string name="select_picture">Select Picture</string>
+    <string name="app_name">Photo Filters</string>
+
+    <string name="chooser_select_image">Select Picture</string>
+
+    <string name="button_none">None</string>
+    <string name="button_gray">Gray</string>
+    <string name="button_blur">Blur</string>
+    <string name="button_swirl">Swirl</string>
+    <string name="button_select_picture">Please, select image</string>
+
 </resources>

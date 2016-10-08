@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String IMAGE_TYPE_URI = "image/*";
 
-    @BindView(R.id.imageView)
+    @BindView(R.id.image_view_picture)
     ImageView mImageView;
 
     @BindView(R.id.progressBar)
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent();
         intent.setType(IMAGE_TYPE_URI);
         intent.setAction(Intent.ACTION_GET_CONTENT);
-        startActivityForResult(Intent.createChooser(intent, getString(R.string.select_picture)), PICK_IMAGE_REQUEST_CODE);
+        startActivityForResult(Intent.createChooser(intent, getString(R.string.button_select_picture)), PICK_IMAGE_REQUEST_CODE);
     }
 
     @Override
